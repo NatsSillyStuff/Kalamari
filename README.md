@@ -10,3 +10,4 @@ Have funnn!!!   ~Natalie <3
 - [ ] Multiplayer (Using a proper server program, no peer-to-peer)   
 - [ ] Decals & Audio (As in making the asset package format)
 - [ ] Proper GUI editor
+- [ ] Lighting   
