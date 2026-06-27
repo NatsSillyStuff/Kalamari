@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalamari.Klient", "Kalamari.Klient\Kalamari.Klient.csproj", "{3BC659E6-A2F9-4495-9273-1ACEDBB8CB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalamari.Engine", "Kalamari.Engine\Kalamari.Engine.csproj", "{8E945D01-80E5-47FB-96FC-AE57CD52AAE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalamari.PhysTest", "Kalamari.PhysTest\Kalamari.PhysTest.csproj", "{0FC6B3B3-2E50-4DF1-A764-4208196A3C6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BC659E6-A2F9-4495-9273-1ACEDBB8CB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC659E6-A2F9-4495-9273-1ACEDBB8CB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC659E6-A2F9-4495-9273-1ACEDBB8CB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC659E6-A2F9-4495-9273-1ACEDBB8CB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E945D01-80E5-47FB-96FC-AE57CD52AAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E945D01-80E5-47FB-96FC-AE57CD52AAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E945D01-80E5-47FB-96FC-AE57CD52AAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E945D01-80E5-47FB-96FC-AE57CD52AAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC6B3B3-2E50-4DF1-A764-4208196A3C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC6B3B3-2E50-4DF1-A764-4208196A3C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC6B3B3-2E50-4DF1-A764-4208196A3C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC6B3B3-2E50-4DF1-A764-4208196A3C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
