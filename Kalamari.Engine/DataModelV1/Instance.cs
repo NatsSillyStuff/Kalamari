@@ -5,7 +5,7 @@ public abstract class Instance
     //todo: idiotproof this
     //hi its idiotproofed now
     public Instance[] Children = []; 
-    public Instance Parent = null!;
+    public Instance? Parent = null!;
     public string Name;
 
     public Instance(string name)
