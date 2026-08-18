@@ -13,7 +13,7 @@ public class Program
     {
         int screenWidth = 800;
         int screenHeight = 450;
-        SetTraceLogLevel(TraceLogLevel.Error);
+        //5SetTraceLogLevel(TraceLogLevel.Error);
         Camera3D camera = new();
         camera.Position = new Vector3(10.0f, 10.0f, 10.0f);
         camera.Target = new Vector3(0.0f, 0.0f, 0.0f);
@@ -22,7 +22,7 @@ public class Program
         camera.Projection = CameraProjection.Perspective;
         Vector3 cubePosition = new(0.0f, 30f, 0f);
         SetExitKey(KeyboardKey.Null);
-        SetTargetFPS(160);
+        SetTargetFPS(60);
         SetConfigFlags(ConfigFlags.ResizableWindow | ConfigFlags.MaximizedWindow);
         InitWindow(screenWidth, screenHeight, "Kalamari");
         PhysMgr.InitWorld();
@@ -47,7 +47,7 @@ public class Program
         ScreenGUI TestGUI = new ScreenGUI("CoreGUI");
         Frame TestFrame = new Frame("TestFrame");
         Button TestBtn = new Button("TestBtn");
-        TestBtn.guiRect = new Rectangle(0, 0, 200, 200);
+        TestBtn.guiRect = new Rect(0, 0, 200, 200);
         TestBtn.BackgroundColor = new Color(1, 1, 255);
         TestBtn.BackgroundOpacity = 1f;
         TestBtn.SetParent(TestFrame);
@@ -66,8 +66,9 @@ public class Program
             {
                 screenWidth = GetScreenWidth();
                 screenHeight = GetScreenHeight();
+                TestFrame.guiRect = new Rect(0, 0, screenWidth, 50);
             }
-            TestFrame.guiRect = new Rect(0, 0, screenWidth, 50);
+            
             if (IsMouseButtonDown(MouseButton.Right))
             {
                 HideCursor();
