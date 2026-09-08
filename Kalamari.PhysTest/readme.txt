@@ -1,0 +1,1 @@
+Please place "Base44assmusic" in the binary folder, cuz i suck at c# and don't know how to copy files trust me im not lazy you are!

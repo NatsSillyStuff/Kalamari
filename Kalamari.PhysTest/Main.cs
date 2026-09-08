@@ -5,7 +5,9 @@ using Jitter2.Collision.Shapes;
 using Jitter2.Dynamics;
 using Jitter2.LinearMath;
 using static Raylib_cs.Raylib;
-
+InitAudioDevice();
+Music music = LoadMusicStream("Base44assmusic.mp3");
+PlayMusicStream(music);
 static Matrix4x4 GetRayLibTransformMatrix(RigidBody body)
 {
     JMatrix ori = JMatrix.CreateFromQuaternion(body.Orientation);
@@ -31,7 +33,7 @@ const int NumberOfBoxes = 1110;
 SetConfigFlags(ConfigFlags.Msaa4xHint);
 
 // initialize a 1200x800 px window with a title
-InitWindow(1200, 800, "Kalamari PhysTest");
+InitWindow(1200, 800, "Kalamari PhysTest (Now with hit music)");
 
 // dynamically create a plane model
 Texture2D texture = GenCheckedTexture(10, 1, Color.LightGray, Color.Gray);
@@ -79,6 +81,7 @@ SetTargetFPS(60);
 // simple render loop
 while (!WindowShouldClose())
 {
+    UpdateMusicStream(music);
     if (IsMouseButtonDown(MouseButton.Right))
     {
         HideCursor();
@@ -108,6 +111,7 @@ while (!WindowShouldClose())
     EndMode3D();
     DrawText($"{GetFPS()} fps", 10, 10, 20, Color.White);
     DrawText($"{NumberOfBoxes} boxes being simulated at once", 10, 20*2, 20, Color.White);
+    DrawText($"I just built this budgeting app ass music", 10, 24, 20, Color.White);
 
     EndDrawing();
 }
